@@ -1,0 +1,2077 @@
+2026-02-14 15:20:09,723 [INFO] MiApp: Start the APP :)
+2026-02-14 15:21:08,061 [INFO] MiApp: Start the APP :)
+2026-02-14 15:22:32,228 [INFO] MiApp: Start the APP :)
+2026-02-14 15:32:32,315 [INFO] MiApp: Start the APP :)
+2026-02-14 15:41:52,713 [INFO] MiApp: Start the APP :)
+2026-02-14 15:42:54,535 [INFO] MiApp: Start the APP :)
+2026-02-14 15:43:15,851 [INFO] MiApp: Start the APP :)
+2026-02-14 15:43:26,150 [INFO] MiApp: Start the APP :)
+2026-02-14 15:45:42,284 [INFO] MiApp: Start the APP :)
+2026-02-14 15:45:47,132 [INFO] MiApp: Start the APP :)
+2026-02-14 15:46:28,380 [INFO] MiApp: Start the APP :)
+2026-02-14 15:46:34,558 [INFO] MiApp: Start the APP :)
+2026-02-14 16:00:53,168 [INFO] MiApp: Start the APP :)
+2026-02-14 18:38:54,024 [INFO] MiApp: Start the APP :)
+2026-02-14 18:39:03,647 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:39:03,776 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-02-14 18:39:03,790 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-02-14 18:39:03,794 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:39:03,913 [INFO] discord.client: logging in using static token
+2026-02-14 18:40:29,962 [INFO] MiApp: Start the APP :)
+2026-02-14 18:40:31,413 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:40:31,417 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-02-14 18:40:31,419 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-02-14 18:40:31,422 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:40:31,425 [INFO] discord.client: logging in using static token
+2026-02-14 18:40:32,745 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 470df0580b448830d0f83e566d7fb083).
+2026-02-14 18:50:51,540 [INFO] MiApp: Start the APP :)
+2026-02-14 18:50:52,895 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:50:52,895 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-02-14 18:50:52,895 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-02-14 18:52:47,520 [INFO] MiApp: Start the APP :)
+2026-02-14 18:52:49,282 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:52:49,285 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-02-14 18:52:49,287 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-02-14 18:52:49,290 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-02-14 18:52:49,294 [INFO] discord.client: logging in using static token
+2026-02-14 18:52:52,227 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: cfbf91674812eb03ce6ac0fe425d15cd).
+2026-02-14 20:54:09,199 [INFO] discord.gateway: Shard ID None has successfully RESUMED session cfbf91674812eb03ce6ac0fe425d15cd.
+2026-02-14 21:52:01,060 [INFO] discord.gateway: Shard ID None has successfully RESUMED session cfbf91674812eb03ce6ac0fe425d15cd.
+2026-02-14 23:38:27,881 [INFO] discord.gateway: Shard ID None has successfully RESUMED session cfbf91674812eb03ce6ac0fe425d15cd.
+2026-03-10 20:45:31,479 [INFO] MiApp: Start the APP :)
+2026-03-10 20:45:33,062 [ERROR] MiApp: Error de repositorio en use case
+2026-03-10 20:45:33,237 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 89, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:34,544 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 108, in simular_horas
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:34,758 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 89, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:35,197 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 42, in feed_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:35,552 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 89, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:35,807 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 58, in play_with_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:35,992 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 89, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:36,372 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 108, in simular_horas
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:45:36,660 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\application\use_cases\rabito_cases.py", line 89, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_De_rabito\backend\infrastructure\repositories\models\rabito.py", line 68, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.user_id
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (1, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-10 20:46:42,210 [INFO] MiApp: Start the APP :)
+2026-03-10 20:48:17,882 [INFO] MiApp: Start the APP :)
+2026-03-10 20:49:03,913 [INFO] MiApp: Start the APP :)
+2026-03-10 20:51:11,962 [INFO] MiApp: Start the APP :)
+2026-03-10 20:53:22,024 [INFO] MiApp: Start the APP :)
+2026-03-10 20:54:11,005 [INFO] MiApp: Start the APP :)
+2026-03-10 20:55:39,114 [INFO] MiApp: Start the APP :)
+2026-03-10 20:57:26,033 [INFO] MiApp: Start the APP :)
+2026-03-10 20:57:52,511 [INFO] MiApp: Start the APP :)
+2026-03-10 20:58:05,141 [INFO] MiApp: Start the APP :)
+2026-03-10 20:58:50,049 [INFO] MiApp: Start the APP :)
+2026-03-10 21:05:33,822 [INFO] MiApp: Start the APP :)
+2026-03-10 21:08:17,170 [INFO] MiApp: Start the APP :)
+2026-03-10 21:50:53,911 [INFO] MiApp: Start the APP :)
+2026-03-10 21:51:08,315 [INFO] MiApp: Start the APP :)
+2026-03-12 21:43:25,862 [INFO] MiApp: Start the APP :)
+2026-03-18 21:20:37,454 [INFO] MiApp: Start the APP :)
+2026-03-18 21:20:38,102 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "c:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 97, in ver_dato_rabito
+    _update_time(rabito)
+  File "c:\Users\deivy\desktop\hijos_de_rabito\backend\application\utils\simulation_time.py", line 14, in _update_time
+    action = autonomous_system.decision.choose_action(drives)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AutonomousSystem' object has no attribute 'decision'
+2026-03-18 21:20:40,493 [INFO] MiApp: Start the APP :)
+2026-03-18 21:20:40,947 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 97, in ver_dato_rabito
+    _update_time(rabito)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\utils\simulation_time.py", line 14, in _update_time
+    action = autonomous_system.decision.choose_action(drives)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AutonomousSystem' object has no attribute 'decision'
+2026-03-18 21:22:53,876 [INFO] MiApp: Start the APP :)
+2026-03-18 21:22:54,675 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 97, in ver_dato_rabito
+    _update_time(rabito)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\utils\simulation_time.py", line 14, in _update_time
+    action = autonomous_system.decision.choose_action(drives)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AutonomousSystem' object has no attribute 'decision'
+2026-03-18 21:23:50,309 [INFO] MiApp: Start the APP :)
+2026-03-18 21:23:51,012 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 97, in ver_dato_rabito
+    _update_time(rabito)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\utils\simulation_time.py", line 14, in _update_time
+    action = autonomous_system.decision.choose_action(drives)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AutonomousSystem' object has no attribute 'decision'
+2026-03-18 21:26:15,396 [INFO] MiApp: Start the APP :)
+2026-03-18 21:26:33,668 [INFO] MiApp: Start the APP :)
+2026-03-18 21:27:06,232 [INFO] MiApp: Start the APP :)
+2026-03-18 21:31:11,485 [INFO] MiApp: Start the APP :)
+2026-03-18 21:31:48,418 [INFO] MiApp: Start the APP :)
+2026-03-18 21:33:19,543 [INFO] MiApp: Start the APP :)
+2026-03-18 22:14:12,178 [INFO] MiApp: Start the APP :)
+2026-03-18 22:14:12,721 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,737 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,760 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,789 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,811 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,840 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,862 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,880 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,903 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,929 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,956 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:12,995 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,033 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,072 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,127 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,164 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,193 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,216 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,243 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,274 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,298 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,325 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,356 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,392 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,423 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,450 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,472 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,492 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,520 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:14:13,546 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 115, in simular_horas
+    system_autonomus.simulate(rabito, horas)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\autonomous_system.py", line 22, in simulate
+    self.action.apply(r, action, hours * proportion)
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\domain\core\homeostasis\action_system.py", line 6, in apply
+    if r.reserves > 0:
+       ^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'reserves'. Did you mean: 'reserve'?
+2026-03-18 22:15:15,288 [INFO] MiApp: Start the APP :)
+2026-03-18 22:15:15,776 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,805 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,835 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,864 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,889 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,921 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,947 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,971 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:15,999 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,021 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,052 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,079 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,105 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,132 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,161 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,191 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,221 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,258 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,294 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,335 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,370 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,400 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,427 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,458 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,485 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,520 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,543 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,582 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,627 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:15:16,662 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 117, in simular_horas
+    return OperationResult(True, f"Simulación de {horas} horas aplicada correctamente", rabito.health())
+                                                                                        ^^^^^^^^^^^^^
+AttributeError: 'Rabito' object has no attribute 'health'
+2026-03-18 22:16:42,630 [INFO] MiApp: Start the APP :)
+2026-03-18 22:16:43,042 [ERROR] MiApp: Error de repositorio en use case
+2026-03-18 22:16:57,845 [INFO] MiApp: Start the APP :)
+2026-03-18 22:20:06,272 [INFO] MiApp: Start the APP :)
+2026-03-18 22:20:37,559 [INFO] MiApp: Start the APP :)
+2026-03-18 22:20:38,048 [ERROR] MiApp: Error de repositorio en use case
+2026-03-18 22:21:17,824 [INFO] MiApp: Start the APP :)
+2026-03-18 22:26:16,906 [INFO] MiApp: Start the APP :)
+2026-03-18 22:26:58,019 [INFO] MiApp: Start the APP :)
+2026-03-18 22:26:58,756 [ERROR] MiApp: Error de repositorio en use case
+2026-03-18 22:29:05,962 [INFO] MiApp: Start the APP :)
+2026-03-18 22:29:06,386 [ERROR] MiApp: Error de repositorio en use case
+2026-03-18 22:29:48,956 [INFO] MiApp: Start the APP :)
+2026-03-18 22:36:24,408 [INFO] MiApp: Start the APP :)
+2026-03-18 22:45:28,623 [INFO] MiApp: Start the APP :)
+2026-03-26 20:14:53,314 [INFO] MiApp: Start the APP :)
+2026-03-26 20:15:35,012 [INFO] MiApp: Start the APP :)
+2026-03-26 20:16:29,188 [INFO] MiApp: Start the APP :)
+2026-03-26 20:16:52,321 [INFO] MiApp: Start the APP :)
+2026-03-26 20:18:55,489 [INFO] MiApp: Start the APP :)
+2026-03-26 20:20:16,144 [INFO] MiApp: Start the APP :)
+2026-03-26 20:23:35,996 [INFO] MiApp: Start the APP :)
+2026-03-26 20:40:36,807 [INFO] MiApp: Start the APP :)
+2026-03-26 20:43:13,491 [INFO] MiApp: Start the APP :)
+2026-03-26 20:43:14,150 [ERROR] MiApp: Error de repositorio en use case
+2026-03-26 20:43:39,210 [INFO] MiApp: Start the APP :)
+2026-03-26 20:51:05,164 [INFO] MiApp: Start the APP :)
+2026-03-26 21:09:12,337 [INFO] MiApp: Start the APP :)
+2026-03-26 21:38:00,265 [INFO] MiApp: Start the APP :)
+2026-03-26 21:39:59,932 [INFO] MiApp: Start the APP :)
+2026-03-26 21:42:04,807 [INFO] MiApp: Start the APP :)
+2026-03-26 21:43:26,860 [INFO] MiApp: Start the APP :)
+2026-03-26 21:47:26,333 [INFO] MiApp: Start the APP :)
+2026-03-26 21:49:00,338 [INFO] MiApp: Start the APP :)
+2026-03-26 21:49:00,824 [ERROR] MiApp: Error de repositorio en use case
+2026-03-26 21:49:07,394 [INFO] MiApp: Start the APP :)
+2026-03-26 22:31:11,612 [INFO] MiApp: Start the APP :)
+2026-03-26 23:32:48,493 [INFO] MiApp: Start the APP :)
+2026-03-26 23:32:48,951 [ERROR] MiApp: Error de repositorio en use case
+2026-03-26 23:33:08,074 [INFO] MiApp: Start the APP :)
+2026-03-26 23:33:55,212 [INFO] MiApp: Start the APP :)
+2026-03-26 23:34:27,183 [INFO] MiApp: Start the APP :)
+2026-03-26 23:34:27,606 [ERROR] MiApp: Error de repositorio en use case
+2026-03-26 23:34:35,880 [INFO] MiApp: Start the APP :)
+2026-03-26 23:36:04,495 [INFO] MiApp: Start the APP :)
+2026-03-26 23:37:52,034 [INFO] MiApp: Start the APP :)
+2026-03-26 23:39:25,851 [INFO] MiApp: Start the APP :)
+2026-03-26 23:40:52,979 [INFO] MiApp: Start the APP :)
+2026-03-26 23:43:06,792 [INFO] MiApp: Start the APP :)
+2026-03-27 00:48:20,560 [INFO] MiApp: Start the APP :)
+2026-03-27 00:49:53,428 [INFO] MiApp: Start the APP :)
+2026-03-27 00:51:43,305 [INFO] MiApp: Start the APP :)
+2026-04-03 11:47:07,008 [INFO] MiApp: Start the APP :)
+2026-04-03 11:58:22,347 [INFO] MiApp: Start the APP :)
+2026-04-03 12:00:04,301 [INFO] MiApp: Start the APP :)
+2026-04-03 12:00:04,743 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:00:18,943 [INFO] MiApp: Start the APP :)
+2026-04-03 12:02:55,290 [INFO] MiApp: Start the APP :)
+2026-04-03 12:20:17,014 [INFO] MiApp: Start the APP :)
+2026-04-03 12:20:17,439 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:20:50,991 [INFO] MiApp: Start the APP :)
+2026-04-03 12:22:22,687 [INFO] MiApp: Start the APP :)
+2026-04-03 12:22:33,273 [INFO] MiApp: Start the APP :)
+2026-04-03 12:23:21,737 [INFO] MiApp: Start the APP :)
+2026-04-03 12:23:22,216 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:23:31,660 [INFO] MiApp: Start the APP :)
+2026-04-03 12:24:03,453 [INFO] MiApp: Start the APP :)
+2026-04-03 12:28:23,956 [INFO] MiApp: Start the APP :)
+2026-04-03 12:28:24,463 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:29:10,043 [INFO] MiApp: Start the APP :)
+2026-04-03 12:30:16,906 [INFO] MiApp: Start the APP :)
+2026-04-03 12:31:05,624 [INFO] MiApp: Start the APP :)
+2026-04-03 12:31:46,943 [INFO] MiApp: Start the APP :)
+2026-04-03 12:31:47,355 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:32:14,399 [INFO] MiApp: Start the APP :)
+2026-04-03 12:32:50,372 [INFO] MiApp: Start the APP :)
+2026-04-03 12:33:40,947 [INFO] MiApp: Start the APP :)
+2026-04-03 12:33:41,671 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:33:47,445 [INFO] MiApp: Start the APP :)
+2026-04-03 12:46:10,394 [INFO] MiApp: Start the APP :)
+2026-04-03 12:46:12,125 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 12:46:20,059 [INFO] MiApp: Start the APP :)
+2026-04-03 12:47:29,878 [INFO] MiApp: Start the APP :)
+2026-04-03 12:48:53,637 [INFO] MiApp: Start the APP :)
+2026-04-03 12:49:33,791 [INFO] MiApp: Start the APP :)
+2026-04-03 12:49:59,535 [INFO] MiApp: Start the APP :)
+2026-04-03 16:37:51,367 [INFO] MiApp: Start the APP :)
+2026-04-03 16:39:32,785 [INFO] MiApp: Start the APP :)
+2026-04-03 16:41:42,890 [INFO] MiApp: Start the APP :)
+2026-04-03 16:43:10,130 [INFO] MiApp: Start the APP :)
+2026-04-03 16:44:39,483 [INFO] MiApp: Start the APP :)
+2026-04-03 16:45:57,647 [INFO] MiApp: Start the APP :)
+2026-04-03 16:48:16,639 [INFO] MiApp: Start the APP :)
+2026-04-03 16:49:20,313 [INFO] MiApp: Start the APP :)
+2026-04-03 16:52:17,223 [INFO] MiApp: Start the APP :)
+2026-04-03 16:57:49,115 [INFO] MiApp: Start the APP :)
+2026-04-03 16:57:49,550 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 16:57:49,560 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: rabito.sleep_state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 90, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\infrastructure\repositories\models\rabito.py", line 72, in get_by_user_id
+    .first()
+     ^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: rabito.sleep_state
+[SQL: SELECT rabito.id AS rabito_id, rabito.user_id AS rabito_user_id, rabito.name AS rabito_name, rabito.reserve AS rabito_reserve, rabito.energy AS rabito_energy, rabito.fatigue AS rabito_fatigue, rabito.stimulation AS rabito_stimulation, rabito.bond AS rabito_bond, rabito.sleep_state AS rabito_sleep_state, rabito.last_updated_at AS rabito_last_updated_at, rabito.created_at AS rabito_created_at 
+FROM rabito 
+WHERE rabito.user_id = ?
+ LIMIT ? OFFSET ?]
+[parameters: (60, 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-03 16:58:21,617 [INFO] MiApp: Start the APP :)
+2026-04-03 16:58:22,060 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 90, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\infrastructure\repositories\models\rabito.py", line 75, in get_by_user_id
+    return self._to_domain(obj) if obj else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\infrastructure\repositories\models\rabito.py", line 30, in _to_domain
+    sleep_state=SleepState(model.sleep_state),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\enum.py", line 1165, in __new__
+    raise ve_exc
+ValueError: 'AWAKE' is not a valid SleepState
+2026-04-03 16:59:03,410 [INFO] MiApp: Start the APP :)
+2026-04-03 16:59:03,888 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 16:59:03,897 [ERROR] MiApp: Error inesperado en use case
+Traceback (most recent call last):
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\decorators\usecase_guard.py", line 15, in wrapper
+    return f_validated(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\application\use_cases\rabito_cases.py", line 90, in ver_dato_rabito
+    rabito = rabito_repo.get_by_user_id(user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\infrastructure\repositories\models\rabito.py", line 75, in get_by_user_id
+    return self._to_domain(obj) if obj else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deivy\desktop\hijos_de_rabito\backend\infrastructure\repositories\models\rabito.py", line 30, in _to_domain
+    sleep_state=SleepState(model.sleep_state),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MisHerramientas\python\3.12.9\Lib\enum.py", line 1165, in __new__
+    raise ve_exc
+ValueError: 'AWAKE' is not a valid SleepState
+2026-04-03 17:01:50,828 [INFO] MiApp: Start the APP :)
+2026-04-03 17:01:51,278 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 17:55:38,470 [INFO] MiApp: Start the APP :)
+2026-04-03 17:55:38,927 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 17:56:01,379 [INFO] MiApp: Start the APP :)
+2026-04-03 17:56:42,689 [INFO] MiApp: Start the APP :)
+2026-04-03 17:57:23,557 [INFO] MiApp: Start the APP :)
+2026-04-03 17:58:29,728 [INFO] MiApp: Start the APP :)
+2026-04-03 18:27:46,451 [INFO] MiApp: Start the APP :)
+2026-04-03 18:36:48,402 [INFO] MiApp: Start the APP :)
+2026-04-03 18:37:37,133 [INFO] MiApp: Start the APP :)
+2026-04-03 19:24:45,002 [INFO] MiApp: Start the APP :)
+2026-04-03 19:25:59,491 [INFO] MiApp: Start the APP :)
+2026-04-03 19:26:00,103 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 19:26:05,209 [INFO] MiApp: Start the APP :)
+2026-04-03 19:27:51,501 [INFO] MiApp: Start the APP :)
+2026-04-03 19:35:22,441 [INFO] MiApp: Start the APP :)
+2026-04-03 19:37:27,633 [INFO] MiApp: Start the APP :)
+2026-04-03 20:22:15,089 [INFO] MiApp: Start the APP :)
+2026-04-03 20:23:00,381 [INFO] MiApp: Start the APP :)
+2026-04-03 20:23:36,636 [INFO] MiApp: Start the APP :)
+2026-04-03 20:23:37,838 [ERROR] MiApp: Error de repositorio en use case
+2026-04-03 20:23:47,838 [INFO] MiApp: Start the APP :)
+2026-04-03 20:37:42,305 [INFO] MiApp: Start the APP :)
+2026-04-06 15:56:36,606 [INFO] MiApp: Start the APP :)
+2026-04-06 16:10:17,213 [INFO] MiApp: Start the APP :)
+2026-04-06 16:11:19,729 [INFO] MiApp: Start the APP :)
+2026-04-06 16:12:28,512 [INFO] MiApp: Start the APP :)
+2026-04-06 16:13:21,566 [INFO] MiApp: Start the APP :)
+2026-04-06 16:13:41,869 [INFO] MiApp: Start the APP :)
+2026-04-06 16:14:26,510 [INFO] MiApp: Start the APP :)
+2026-04-06 16:14:26,988 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 16:14:41,701 [INFO] MiApp: Start the APP :)
+2026-04-06 16:16:50,440 [INFO] MiApp: Start the APP :)
+2026-04-06 16:19:58,139 [INFO] MiApp: Start the APP :)
+2026-04-06 16:20:34,647 [INFO] MiApp: Start the APP :)
+2026-04-06 16:21:18,209 [INFO] MiApp: Start the APP :)
+2026-04-06 16:21:53,776 [INFO] MiApp: Start the APP :)
+2026-04-06 16:33:57,115 [INFO] MiApp: Start the APP :)
+2026-04-06 16:34:31,803 [INFO] MiApp: Start the APP :)
+2026-04-06 16:34:32,213 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 16:43:41,948 [INFO] MiApp: Start the APP :)
+2026-04-06 16:44:28,006 [INFO] MiApp: Start the APP :)
+2026-04-06 16:53:29,523 [INFO] MiApp: Start the APP :)
+2026-04-06 16:54:23,421 [INFO] MiApp: Start the APP :)
+2026-04-06 16:54:24,066 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 16:54:39,807 [INFO] MiApp: Start the APP :)
+2026-04-06 19:14:05,225 [INFO] MiApp: Start the APP :)
+2026-04-06 19:18:07,409 [INFO] MiApp: Start the APP :)
+2026-04-06 19:56:48,660 [INFO] MiApp: Start the APP :)
+2026-04-06 20:00:57,576 [INFO] MiApp: Start the APP :)
+2026-04-06 20:02:48,309 [INFO] MiApp: Start the APP :)
+2026-04-06 21:06:04,859 [INFO] MiApp: Start the APP :)
+2026-04-06 21:11:36,749 [INFO] MiApp: Start the APP :)
+2026-04-06 21:17:08,197 [INFO] MiApp: Start the APP :)
+2026-04-06 21:17:23,617 [INFO] MiApp: Start the APP :)
+2026-04-06 21:22:58,393 [INFO] MiApp: Start the APP :)
+2026-04-06 21:56:39,610 [INFO] MiApp: Start the APP :)
+2026-04-06 21:57:02,359 [INFO] MiApp: Start the APP :)
+2026-04-06 21:58:02,266 [INFO] MiApp: Start the APP :)
+2026-04-06 21:58:02,874 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 21:58:09,637 [INFO] MiApp: Start the APP :)
+2026-04-06 22:12:18,407 [INFO] MiApp: Start the APP :)
+2026-04-06 22:17:49,637 [INFO] MiApp: Start the APP :)
+2026-04-06 22:19:09,288 [INFO] MiApp: Start the APP :)
+2026-04-06 22:22:26,663 [INFO] MiApp: Start the APP :)
+2026-04-06 22:23:41,056 [INFO] MiApp: Start the APP :)
+2026-04-06 22:31:23,331 [INFO] MiApp: Start the APP :)
+2026-04-06 22:34:40,643 [INFO] MiApp: Start the APP :)
+2026-04-06 22:36:34,585 [INFO] MiApp: Start the APP :)
+2026-04-06 22:38:11,191 [INFO] MiApp: Start the APP :)
+2026-04-06 22:39:03,570 [INFO] MiApp: Start the APP :)
+2026-04-06 22:39:43,785 [INFO] MiApp: Start the APP :)
+2026-04-06 22:40:22,658 [INFO] MiApp: Start the APP :)
+2026-04-06 22:42:01,060 [INFO] MiApp: Start the APP :)
+2026-04-06 22:42:01,483 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 22:42:19,178 [INFO] MiApp: Start the APP :)
+2026-04-06 22:45:41,160 [INFO] MiApp: Start the APP :)
+2026-04-06 22:45:41,729 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 22:45:49,715 [INFO] MiApp: Start the APP :)
+2026-04-06 22:46:13,684 [INFO] MiApp: Start the APP :)
+2026-04-06 22:46:50,703 [INFO] MiApp: Start the APP :)
+2026-04-06 22:46:51,289 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 22:47:00,864 [INFO] MiApp: Start the APP :)
+2026-04-06 22:50:44,493 [INFO] MiApp: Start the APP :)
+2026-04-06 22:50:44,925 [ERROR] MiApp: Error de repositorio en use case
+2026-04-06 22:51:02,324 [INFO] MiApp: Start the APP :)
