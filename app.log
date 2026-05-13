@@ -2075,3 +2075,8 @@ ValueError: 'AWAKE' is not a valid SleepState
 2026-04-06 22:50:44,493 [INFO] MiApp: Start the APP :)
 2026-04-06 22:50:44,925 [ERROR] MiApp: Error de repositorio en use case
 2026-04-06 22:51:02,324 [INFO] MiApp: Start the APP :)
+2026-05-13 16:47:29,620 [INFO] MiApp: Start the APP :)
+2026-05-13 16:47:48,527 [INFO] MiApp: Start the APP :)
+2026-05-13 16:47:59,352 [INFO] MiApp: Start the APP :)
+2026-05-13 16:56:48,704 [INFO] MiApp: Start the APP :)
+2026-05-13 17:09:17,893 [INFO] MiApp: Start the APP :)
